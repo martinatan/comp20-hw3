@@ -15,7 +15,6 @@ h1, h3, h4, h5, h6 {
 h2 {
 	font-family: 'Rubik', sans-serif;
   	color: #6699ff;
-  	text-shadow: 2px 2px 3px rgb(0, 0, 0, 0.2);
 }
 
 p {
@@ -33,11 +32,13 @@ header {
 
 .main {
 	margin-top:100px;
+	margin-bottom:80px;
 }
 
 @media screen and (max-width: 2560px) {
 	.main {
 		margin-top: 60px;
+		margin-bottom: 80;
 	}
 }
 
@@ -143,6 +144,28 @@ a:hover {
 	background-color: rgb(102, 153, 255, 0.8);
 }
 
+.button {
+	font-family: 'Rubik', sans-serif;
+	padding: 10px 15px;
+	border-radius: 8px;
+	background-color: #6699ff;
+	font-color: #fff;
+	text-decoration: none;
+}
+
+.button a {
+	font-color: #fff;
+}
+
+.button:hover{
+	background-color: rgb(102, 153, 255, 0.7);
+}
+
+.button a:hover{
+	background-color: #6699ff;
+	color:fff;
+}
+
 
 .title {
 	text-align:center;
@@ -152,10 +175,9 @@ a:hover {
 }
 
 .section {
-	width:80%;
 	margin-left: auto;
     margin-right: auto;
-	padding: 10px 80px;
+	padding: 10px 10px;
 }
 
 @media screen and (max-width: 724px) {

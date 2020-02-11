@@ -10,7 +10,67 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+* {
+  box-sizing: border-box;
+}
 
+.container {
+  padding: 15px;
+}
+
+/* Clear floats */
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+/* 2/3 column */
+.column-66 {
+  float: left;
+  width: 66.6666%;
+  padding: 70px 0px;
+}
+
+/* 1/3 column */
+.column-33 {
+  float: left;
+  width: 33.3333%;
+  padding: 15px;
+}
+
+/* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+
+@media screen and (max-width: 1024px) {
+  .column-66 {
+    width: 50%;
+    text-align: center;
+    padding: 30px 0px;
+  }
+
+  .column-33 {
+  	width: 50%;
+  }
+  .column-66,
+  .column-33 p {
+  	text-align: justify;
+  }
+}
+
+@media screen and (max-width: 724px) {
+  .column-33 {
+    width: 100%;
+  }
+  .column-66 {
+  	width: 100%;
+  	text-align: center;
+	padding: 15px 0px;
+  }
+  .column-66,
+  .column-33 p {
+  	text-align: justify;
+  }
+}
 </style>
 
 </head>
@@ -33,34 +93,77 @@
 
 	<div class="main">
 
-		<div >
-			<div class="title">
-				<h1>Explore Our Services</h1>
-			</div>
+		<div class="title">
+			<h1>Explore Our Services</h1>
+		</div>
 
-			<div class="section">
-				<img src="images/tischroof.JPG" height="200px">
-
-				<p>Enjoy a walking tour of state-of-the-art campus facilities such as Tisch Library, Tisch Gym, and the Tisch College of Civic Life. Get a history lesson from a trained campus tour guide on as many things as they can remember without having checked the handbook for a while. You won't believe how tragic our mascot Jumbo's story actually is!</p>
-			</div>
-
-			<div class="section">
-				<img src="images/bowengate.PNG" height="200px">
-
-				<p>Enjoy a walking tour of state-of-the-art campus facilities such as Tisch Library, Tisch Gym, and the Tisch College of Civic Life. Get a history lesson from a trained campus tour guide on as many things as they can remember without having checked the handbook for a while. You won't believe how tragic our mascot Jumbo's story actually is!</p>
-			</div>
-
-			<div class="section">
-				<img src="images/jumbostatue.JPG" height="300px">
-
-				<p>Enjoy a walking tour of state-of-the-art campus facilities such as Tisch Library, Tisch Gym, and the Tisch College of Civic Life. Get a history lesson from a trained campus tour guide on as many things as they can remember without having checked the handbook for a while. You won't believe how tragic our mascot Jumbo's story actually is!</p>
-			</div>
-
+		<div class="section" style="text-align:center;">
+			<a href="contact.html" class="button">contact us to book a trek! >> >></a>
 		</div>
 
 
+		<div class="section">
+			<div class="container">
+			  <div class="row">
+			    <div class="column-33">
+			      <img src="images/tischroof.JPG" width="100%">
+			    </div>
+			    <div class="column-66">
+					<h2>Tour with a Jumbo (1.5 hours)</h2>
+					<h3>$30</h3>
+					<h4><ul>
+						<li>Personalized tour stops and talking points based on your interests</li>
+						<li>$1 additional charge for every photo I take for you</li>
 
+					</ul></h4>
+			    </div>
+			  </div>
+			</div>
+		</div>
 
+		<div class="section">
+			<div class="container">
+			  <div class="row">
+			    <div class="column-33">
+					<img src="images/bowengate.PNG" width="100%">
+			    </div>
+			    <div class="column-66">
+			    	<h2>Lunch with A Jumbo (1 hour)</h2>
+			    	<h3>$15</h3>
+
+			      	<h4><ul>
+						<li>Get personalized recommendations for food options at one of the cafes or restaurants on Tufts campus or nearby in Davis Square.</li>
+						<li>$1 additional charge for every photo I take for you</li>
+
+					</ul></h4>
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="container">
+			  <div class="row">
+			    <div class="column-33">
+					<img src="images/jumbostatue.JPG" width="100%">
+			    </div>
+			    <div class="column-66">
+			    	<h2>Lunch + Tour Combo (2.5 hours)</h2>
+			    	<h3>$40</h3>
+
+			      	<h4><ul>
+						<li>This option offers all features from both of the above options.</li>
+						<li>Lunch must be at a venue closer to Tufts campus (not Davis Square)</li>
+
+					</ul></h4>
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+		<div class="section" style="text-align:center;">
+			<a href="contact.html" class="button">contact us to book a trek! >> >></a>
+		</div>
 
 	</div>
 
